@@ -12,14 +12,12 @@
         android:layout_weight="3"
         >
 
-        <android.support.v7.widget.AppCompatImageView
+
+        <example.codeclan.com.game_keeper.ZoomImage
             android:id= "@+id/mapView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
-            android:src="R."/>
-
-
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
 
     </RelativeLayout>
 
@@ -119,13 +117,6 @@
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
-
-
 
 
 
