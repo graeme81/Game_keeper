@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.support.graphics.drawable.VectorDrawableCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.widget.ImageView;
@@ -42,8 +43,6 @@ public class ZoomImage extends ImageView{
         public boolean onScale(ScaleGestureDetector detector) {
             scaleFactor *= detector.getScaleFactor();
             scaleFactor = Math.max(minZoom, Math.min(maxZoom,scaleFactor));
-            //invalidate();
-            //requestLayout();
 
             return super.onScale(detector);
         }
@@ -120,7 +119,7 @@ public class ZoomImage extends ImageView{
         super.onSizeChanged(width, height, oldWidth, oldHeight);
     }
 
-    public void setImage(Drawable ting){
-
-    }
+//    public void setImage(Drawable ting){
+//
+//    }
 }
