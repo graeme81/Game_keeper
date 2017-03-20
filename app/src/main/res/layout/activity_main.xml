@@ -56,6 +56,7 @@
 
 
             <Button
+                android:id= "@+id/buttonKill"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
@@ -74,6 +75,7 @@
 
 
             <Button
+                android:id= "@+id/buttonTrail"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
@@ -92,6 +94,7 @@
 
 
             <Button
+                android:id= "@+id/buttonCarcass"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
@@ -108,6 +111,7 @@
             android:layout_weight="1"
             >
             <Button
+                android:id= "@+id/buttonSpotted"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>

@@ -4,7 +4,7 @@ package example.codeclan.com.game_keeper;
  * Created by user on 17/03/2017.
  */
 
-public class Carcas extends MapEvent {
+public class Carcass extends MapEvent {
     private AnimalType animalType;
     private String description;
     private String icon;
@@ -13,7 +13,7 @@ public class Carcas extends MapEvent {
     private String shotType;
     private String health;
 
-    public Carcas(AnimalType animalType, String description, String icon, String species, String size, String shotType, String health){
+    public Carcass(AnimalType animalType, String description, String icon, String species, String size, String shotType, String health){
         this.animalType = animalType;
         this.description = description;
         this.icon = icon;                        //hardcode the icons
