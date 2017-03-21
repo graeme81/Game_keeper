@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_input_dead2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.codeclan.com.game_keeper.InputDeadActivity"
+    tools:showIn="@layout/activity_input_dead">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animal"
+        android:ems="10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:id="@+id/deadAnimalText"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType=""
+        android:text="@string/size"
+        android:ems="10"
+        android:id="@+id/sizeText"
+        android:layout_below="@+id/healthText"
+        android:layout_alignLeft="@+id/healthText"
+        android:layout_alignStart="@+id/healthText"
+        android:layout_marginTop="28dp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="@string/species"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:id="@+id/deadSpeciesText"
+        android:layout_below="@+id/deadAnimalText"
+        android:layout_alignLeft="@+id/deadAnimalText"
+        android:layout_alignStart="@+id/deadAnimalText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shot_type"
+        android:ems="10"
+        android:layout_marginTop="28dp"
+        android:id="@+id/shotTypeText"
+        android:layout_below="@+id/deadSpeciesText"
+        android:layout_alignLeft="@+id/deadSpeciesText"
+        android:layout_alignStart="@+id/deadSpeciesText"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/health_disease"
+        android:ems="10"
+        android:id="@+id/healthText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/shotTypeText"
+        android:layout_alignStart="@+id/shotTypeText"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:ems="10"
+        android:id="@+id/deadDescriptionText"
+        android:layout_below="@+id/sizeText"
+        android:layout_alignLeft="@+id/sizeText"
+        android:layout_alignStart="@+id/sizeText"
+        android:layout_marginTop="35dp"
+        android:inputType="text" />
+</RelativeLayout>

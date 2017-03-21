@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.codeclan.com.game_keeper">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Calls"
+            android:label="Tracking Calls">
+        </activity>
+
+        <activity android:name=".Calendar"
+            android:label="Hunting Seasons">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InputLiveActivity"
+            android:label="@string/title_activity_input_live"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InputDeadActivity"
+            android:label="@string/title_activity_input_dead"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/action_tracking_calls"
+            android:title="one" />
+        <item
+            android:id="@+id/action_calendar"
+            android:title="two"/>
+        <item
+            android:id="@+id/action_reset"
+            android:title="three"/>
+    </menu>
+
+</manifest>
