@@ -1,90 +1,66 @@
 package example.codeclan.com.game_keeper;
 
-<<<<<<< HEAD
-import android.graphics.drawable.Drawable;
-import android.view.View;
-
-
-public class NewIconClickListener implements View.OnClickListener {
-
-   private Drawable icon;
-    private MapEvent thisEvent;
-    @Override
-    public void onClick(View view) {
-=======
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import static android.R.attr.left;
+
 
 public class NewIconClickListener implements View.OnClickListener{
 
     private Drawable icon;
     private MapEvent thisEvent;
-    Canvas map;
+    MapCanvas map;
+    Activity main;
 
-    public NewIconClickListener(Canvas map){
+    public NewIconClickListener(MapCanvas map, Activity main){
         this.map = map;
+        this.main = main;
     }
 
     @Override
     public void onClick(View view) {
-        
-        this.map.setOnTouchListener(new PlaceIconListener());
-        Log.d(this.map.toString(), "where it is going");
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
-
-        if (R.id.buttonKill == view.getId()){
-//            switch to an activity to set input parameters (see below)
-//            thisEvent = new Kill( animalType, String description, String icon, String species, String size, String shotType, String health);
-
-<<<<<<< HEAD
-=======
-
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
-        };
 
         if (R.id.buttonTrail == view.getId()){
-//            switch to an activity to set input parameters (see below)
-<<<<<<< HEAD
-//            thisEvent = new Kill( animalType, String description, String icon, String species, String size, String shotType, String health);
-=======
-//            thisEvent = new Trail( animalType, String description, String icon, String species, String size, String shotType, String health);
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
+            icon = this.main.getResources().getDrawable(R.drawable.trail);
+            this.map.setIcon(icon);
+            Intent inputIntent = new Intent(this.main, InputLiveActivity.class);
+            inputIntent.putExtra("ICON", "trail");
+            this.main.startActivity(inputIntent);
 
         };
 
         if (R.id.buttonSpotted == view.getId()){
-//            switch to an activity to set input parameters (see below)
-<<<<<<< HEAD
-//            thisEvent = new Kill( animalType, String description, String icon, String species, String size, String shotType, String health);
-
-        };
-        if (R.id.buttonDisease == view.getId()){
-//            switch to an activity to set input parameters (see below)
-//            thisEvent = new Kill( animalType, String description, String icon, String species, String size, String shotType, String health);
-
-        }
-        if (R.id.buttonCarcass == view.getId()){
-//            switch to an activity to set input parameters (see below)
-//            thisEvent = new Kill( animalType, String description, String icon, String species, String size, String shotType, String health);
-
-        }
-    }
-}
-=======
-//            thisEvent = new Spotted( animalType, String description, String icon, String species, String size, String shotType, String health);
-
+            icon = this.main.getResources().getDrawable(R.drawable.spotted);
+            this.map.setIcon(icon);
+            Intent inputIntent = new Intent(this.main, InputLiveActivity.class);
+            inputIntent.putExtra("ICON", "spotted");
+            this.main.startActivity(inputIntent);
         };
 
         if (R.id.buttonCarcass == view.getId()){
-//            switch to an activity to set input parameters (see below)
-//            thisEvent = new Carcass( animalType, String description, String icon, String species, String size, String shotType, String health);
+            icon = this.main.getResources().getDrawable(R.drawable.carcass);
+            this.map.setIcon(icon);
+            Intent inputIntent = new Intent(this.main, InputDeadActivity.class);
+            inputIntent.putExtra("ICON", "carcass");
+            this.main.startActivity(inputIntent);
+        };
 
-        }
+        if (R.id.buttonKill == view.getId()){
+            icon = this.main.getResources().getDrawable(R.drawable.kill);
+            this.map.setIcon(icon);
+            Intent inputIntent = new Intent(this.main, InputDeadActivity.class);
+            inputIntent.putExtra("ICON", "kill");
+            this.main.startActivity(inputIntent);
+
+        };
+
+
     }
 }
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448

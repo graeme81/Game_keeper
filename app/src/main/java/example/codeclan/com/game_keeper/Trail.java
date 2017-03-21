@@ -5,22 +5,20 @@ package example.codeclan.com.game_keeper;
  */
 
 public class Trail extends MapEvent {
-    private AnimalType animalType;
+    private String animalType;
     private String description;
-    private String icon;
 
-    public Trail(AnimalType animalType, String description, String icon){
+    public Trail(String animalType, String description){
         this.animalType = animalType;
         this.description = description;
-        this.icon = icon;                        //hardcode the icons
+                      //hardcode the icons
     }
 
-    public AnimalType getAnimalType(){return this.animalType;};
+    public String getAnimalType(){return this.animalType;};
     public String getDescription(){return this.description;};
-    public String getIcon(){return this.icon;};
 
-    public void setAnimalType(AnimalType animalType){this.animalType = animalType;};
+
+    public void setAnimalType(String animalType){this.animalType = animalType;};
     public void setDescription(String description){this.description = description;};
-    public void setIcon(String icon){this.icon = icon;};
 
 }

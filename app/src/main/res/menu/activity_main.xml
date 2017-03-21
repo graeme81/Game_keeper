@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_tracking_calls"
+        android:title="Traking Calls" />
+    <item
+        android:id="@+id/action_calendar"
+        android:title="Calendar"/>
+    <item
+        android:id="@+id/action_reset"
+        android:title="What's The Poops"/>
+
+
+
+</menu>

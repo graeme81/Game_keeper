@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id= "@+id/deerCall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="50sp"
+        android:onClick="onDeerCallClick"/>
+
+
+    <Button
+        android:id= "@+id/pigCall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="50sp"
+        android:onClick="onPigCallClick"/>
+
+    <Button
+        android:id= "@+id/rabbitCall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="50sp"
+        android:onClick="onRabbitCallClick"/>
+
+
+    <Button
+        android:id= "@+id/elkCall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="50sp"
+        android:onClick="onElkCallClick"
+        />
+
+
+    <Button
+        android:id= "@+id/duckCall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="50sp"
+        android:onClick="onDuckCallClick"
+        />
+
+
+
+
+</LinearLayout>

@@ -4,12 +4,10 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
-=======
 import android.util.DisplayMetrics;
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -20,29 +18,6 @@ import static java.security.AccessController.getContext;
  */
 
 public class MainActivity extends AppCompatActivity {
-<<<<<<< HEAD
-ImageView  map = (ImageView) findViewById(R.id.mapView);
-
-    map.setImageResource(R.drawable.mapfile);
-
-    //in onCreate
-
-
-
-    private NewIconClickListener carcassListener = new NewIconClickListener();
-    private NewIconClickListener spottedListener = new NewIconClickListener();
-    private NewIconClickListener trailListener = new NewIconClickListener();
-
-    private Button buttonKill = (Button) findViewById(R.id.buttonKill);
-    private Button buttonTrail = (Button) findViewById(R.id.buttonTrail);
-    private Button buttonCarcass = (Button) findViewById(R.id.buttonCarcass);
-
-    buttonKill.setOnClickListener(new NewIconClickListener(););
-    buttonTrail.setOnClickListener(new NewIconClickListener(););
-    buttonCarcass.setOnClickListener(new NewIconClickListener(););
-
-}
-=======
 
 //    ZoomImage map;
     ImageView map;
@@ -51,19 +26,18 @@ ImageView  map = (ImageView) findViewById(R.id.mapView);
     Button buttonCarcass;
     Button buttonSpotted;
     MapCanvas mapCanvas;
-    Bitmap icon;
-
-
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
 
+        map = (ImageView) findViewById(R.id.mapView);
+        map.setImageResource(R.drawable.mapfile);
+
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        mapCanvas = new MapCanvas(displayMetrics, icon);
+        mapCanvas = new MapCanvas(displayMetrics);
 
 
 
@@ -73,15 +47,13 @@ ImageView  map = (ImageView) findViewById(R.id.mapView);
         buttonCarcass = (Button) findViewById(R.id.buttonCarcass);
         buttonSpotted = (Button) findViewById(R.id.buttonSpotted);
 
-        map = (ImageView) findViewById(R.id.mapView);
-        map.setImageResource(R.drawable.mapfile);
 
-        buttonKill.setOnClickListener(new NewIconClickListener(mapCanvas));
-        buttonTrail.setOnClickListener(new NewIconClickListener(mapCanvas));
-        buttonCarcass.setOnClickListener(new NewIconClickListener(mapCanvas));
-        buttonSpotted.setOnClickListener(new NewIconClickListener(mapCanvas));
+
+        buttonKill.setOnClickListener(new NewIconClickListener(mapCanvas, this));
+        buttonTrail.setOnClickListener(new NewIconClickListener(mapCanvas,this));
+        buttonCarcass.setOnClickListener(new NewIconClickListener(mapCanvas, this));
+        buttonSpotted.setOnClickListener(new NewIconClickListener(mapCanvas, this));
 
 
     }
 }
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448

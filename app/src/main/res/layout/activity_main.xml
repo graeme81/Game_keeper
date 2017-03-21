@@ -36,17 +36,6 @@
             <!--&gt;-->
 
 
-<<<<<<< HEAD
-            <Button
-                android:id= "@+id/buttonKill"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-=======
             <!--<Button-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="0dp"-->
@@ -55,7 +44,6 @@
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="0dp"-->
                 <!--android:layout_weight="1"/>-->
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
 
         <!--</LinearLayout>-->
 
@@ -68,11 +56,7 @@
 
 
             <Button
-<<<<<<< HEAD
-                android:id= "@+id/buttonSpotted"
-=======
                 android:id= "@+id/buttonKill"
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
@@ -91,11 +75,7 @@
 
 
             <Button
-<<<<<<< HEAD
-                android:id= "@+id/buttonDisease"
-=======
                 android:id= "@+id/buttonTrail"
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
@@ -131,11 +111,7 @@
             android:layout_weight="1"
             >
             <Button
-<<<<<<< HEAD
-                android:id= "@+id/buttonTrail"
-=======
                 android:id= "@+id/buttonSpotted"
->>>>>>> b63f7710e7fb645745229aa57c42d3323c298448
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
