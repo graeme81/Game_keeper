@@ -50,7 +50,8 @@ public class Calls extends AppCompatActivity {
         Toast.makeText(this, "Deer", Toast.LENGTH_SHORT).show();
     }
     public void onPigCallClick(View view){
-        Toast.makeText(this, "Pig", Toast.LENGTH_SHORT).show();
+        MediaPlayer mPlayer = MediaPlayer.create(Calls.this, R.raw.hog);
+        mPlayer.start();
     }
 
     public void onRabbitCallClick(View view){
@@ -62,7 +63,8 @@ public class Calls extends AppCompatActivity {
         Toast.makeText(this, "Elk", Toast.LENGTH_SHORT).show();
     }
     public void onDuckCallClick(View view){
-        Toast.makeText(this, "Duck", Toast.LENGTH_SHORT).show();
+        MediaPlayer mPlayer = MediaPlayer.create(Calls.this, R.raw.duck);
+        mPlayer.start();
     }
 
     @Override
@@ -89,11 +91,7 @@ public class Calls extends AppCompatActivity {
             intent = new Intent(this, Calendar.class);
             startActivity(intent);
 
-            // Toast.makeText(this, "burnt toast", Toast.LENGTH_SHORT).show();
-
         } else if (item.getItemId() == R.id.action_reset) {
-
-            // Log.d("this", this);
 
             Toast.makeText(this, "jammy toast", Toast.LENGTH_SHORT).show();
 
