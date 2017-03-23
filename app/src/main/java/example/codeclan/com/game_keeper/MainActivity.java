@@ -24,6 +24,7 @@ import org.xmlpull.v1.XmlPullParser;
 
 import java.util.Vector;
 
+
 import static java.security.AccessController.getContext;
 
 /**
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonSpotted;
     MapCanvas mapCanvas;
     MapEvent mapEvent;
+
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,9 +81,6 @@ public class MainActivity extends AppCompatActivity {
         buttonTrail.setOnClickListener(new NewIconClickListener(mapCanvas,this));
         buttonCarcass.setOnClickListener(new NewIconClickListener(mapCanvas, this));
         buttonSpotted.setOnClickListener(new NewIconClickListener(mapCanvas, this));
-
-
-
 
 
     }

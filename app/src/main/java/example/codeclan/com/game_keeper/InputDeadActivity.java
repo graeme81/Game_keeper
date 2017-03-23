@@ -60,18 +60,27 @@ public class InputDeadActivity extends AppCompatActivity {
             switch (type) {
                 case "kill":
                     Kill kill = new Kill(animal, description, species, size, shotType, health);
+<<<<<<< HEAD
                     toMap.putExtra("MAPICON", kill);
 
+=======
+>>>>>>> 02d2b223c3772ef82611a9ce7da265f4dc4f4d6d
                     break;
 
                 case "carcass":
                     Carcass carcass = new Carcass(animal, description, species, size, shotType, health);
+<<<<<<< HEAD
                     toMap.putExtra("MAPICON", carcass);
 
+=======
+>>>>>>> 02d2b223c3772ef82611a9ce7da265f4dc4f4d6d
                     break;
             }
 
             this.startActivity(toMap);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02d2b223c3772ef82611a9ce7da265f4dc4f4d6d
         }
 }

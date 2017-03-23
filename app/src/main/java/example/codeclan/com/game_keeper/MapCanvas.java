@@ -1,7 +1,9 @@
 package example.codeclan.com.game_keeper;
 
+
 import android.app.Activity;
 import android.content.SharedPreferences;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -18,6 +20,7 @@ import android.widget.ImageView;
 /**
  * Created by user on 20/03/2017.
  */
+
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -64,11 +67,13 @@ public class MapCanvas extends ImageView {
                     point = new PointF(x, y);
 
                     invalidate();
+
                     break;
             }
         }
         return false;
     }
+
 
     public int getSavedIcon() {
         Log.d("loading saved icon", "loading saved icon");
