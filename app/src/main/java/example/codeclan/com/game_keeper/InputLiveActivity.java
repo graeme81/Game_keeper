@@ -54,10 +54,13 @@ public class InputLiveActivity extends AppCompatActivity {
         switch (type) {
             case "spotted":
                 Spotted spotted = new Spotted(animal, description);
+                toMap.putExtra("MAPICON", spotted);
+
                 break;
 
             case "trail":
-                Trail trial = new Trail(animal, description);
+                Trail trail = new Trail(animal, description);
+                toMap.putExtra("MAPICON", trail);
                 break;
         }
 
