@@ -81,4 +81,7 @@
     <string name="size">SIze</string>
     <string name="shot_type">Shot Type</string>
     <string name="species">Species</string>
+    <string name="saved_icon" />
+    <string name="saved_click" />
+
 </resources>
